@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usuários</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="search-container">
+      <input
+        type="text"
+        id="search-input"
+        oninput="filterUsersByName()"
+        placeholder="Buscar por nome, sobrenome, idade ou apelido"
+      />
+    </div>
+  </header>
+
+  <div id="users-container" class="users-container">
+    <p id="loading-message">Carregando usuários...</p>
+  </div>
+
+  <footer>
+    <div class="navigation-buttons">
+      <button id="previous-page" onclick="previousPage()">Página Anterior</button>
+      <button id="next-page" onclick="nextPage()">Próxima Página</button>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay">
+    <div class="card" id="user-card">
+      <h2>Detalhes do Usuário</h2>
+      <p><img src="" id="user-image" alt="User Image"></p>
+      <p><strong>Nome:</strong> <span id="user-name"></span></p>
+      <p><strong>Idade:</strong> <span id="user-age"></span></p>
+      <p><strong>E-mail:</strong> <span id="user-email"></span></p>
+      <p><strong>Gênero:</strong> <span id="user-gender"></span></p>
+      <p><strong>Username:</strong> <span id="user-username"></span></p>
+      <p><strong>Data de Nascimento:</strong> <span id="user-birthDate"></span></p>
+      <p><strong>Grupo Sanguíneo:</strong> <span id="user-bloodGroup"></span></p>
+      <p><strong>Altura:</strong> <span id="user-height"></span></p>
+      <p><strong>Peso:</strong> <span id="user-weight"></span></p>
+      <p><strong>Endereço IP:</strong> <span id="user-ip"></span></p>
+      <p><strong>Endereço:</strong> <span id="user-address"></span></p>
+      <p><strong>Cidade:</strong> <span id="user-city"></span></p>
+      <p><strong>Universidade:</strong> <span id="user-university"></span></p>
+      
+      <span class="close-btn" onclick="closeCard()">X</span>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
