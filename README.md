@@ -6,7 +6,7 @@ Este projeto demonstra como criar uma interface simples para visualizar, filtrar
 
 * Exibição de uma lista de usuários.
 * Filtragem de usuários por nome.
-* Visualização detalhada de um usuário ao clicar em seu nome.
+* Visualização detalhada de um usuário ao clicar no seu card.
 
 **Tecnologias:**
 
