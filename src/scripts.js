@@ -76,6 +76,7 @@ function previousPage() {
 }
 
 function filterUsersByName() {
+  currentPage = 1;
   const searchTerm = document.getElementById("search-input").value.toLowerCase();
   const filteredUsers = allUsers.filter((user) => {
     const fullName = `${user.firstName} ${user.lastName} ${user.username}`.toLowerCase();
